@@ -1,5 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+/*Home */
+
+.home-container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #0d1117;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Raleway", sans-serif;
+  color: white;
+}
+
+@keyframes twinkle {
+
+  0%,
+  100% {
+    opacity: 0.5;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+/* Ensure the stars appear in the home-section only */
+.star {
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+  /* Glowing effect */
+  animation: twinkle 2s infinite alternate ease-in-out;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+#name {
+  font-size: 4rem;
+  color: blueviolet;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 100;
+}
+
+/* Navbar */
+
+.nav-container {
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.nav-child {
+  display: flex;
+  align-items: center;
+  background: rgba(114, 114, 114, .2);
+  border: 1px solid #404040b5;
+  border-radius: 30px;
+  backdrop-filter: blur(5px);
+}
+
+.nav-elements {
+  font-family: "Raleway", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.nav-elements:hover {
+  background-color: rgba(114, 114, 114, .2);
+  transition: ease 1s;
 }

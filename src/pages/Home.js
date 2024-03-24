@@ -2,10 +2,30 @@ import React from 'react'
 import Navbar from '../components/Navbar';
 
 const Home = () => {
+
+    const createStars = (numberOfStars) => {
+        let stars = [];
+        for (let i = 0; i < numberOfStars; i++) {
+            let starStyle = {
+                left: `${Math.random() * 100}%`,
+                top: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 2}s`,
+                animationDuration: `${Math.random() * 2 + 1}s`
+            };
+            stars.push(<div className="star" style={starStyle} key={i}></div>);
+        }
+        return stars;
+
+    };
+
     return (
         <div>
             <Navbar />
-            Home
+            <div className='home-container'>
+                {createStars(200)}
+                <h1>Welcome, I'm <span id='name'>Miran</span></h1>
+                <h2>A Full Stack Developer</h2>
+            </div>
         </div>
     )
 }
