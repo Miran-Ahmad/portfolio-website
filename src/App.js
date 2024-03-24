@@ -1,9 +1,16 @@
 import './App.css';
+import Home from './pages/Home';
+import About from './pages/About';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
 
 function App() {
   return (
     <div>
-      App
+      <Home />
+      <About />
+      <Projects />
+      <Contact />
     </div>
   );
 }
