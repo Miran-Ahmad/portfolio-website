@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../components/Navbar';
 
 const Home = () => {
 
@@ -20,7 +19,6 @@ const Home = () => {
 
     return (
         <div>
-            <Navbar />
             <div className='home-container'>
                 {createStars(200)}
                 <h1>Welcome, I'm <span id='name'>Miran</span></h1>

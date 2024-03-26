@@ -18,8 +18,10 @@
   align-items: center;
   justify-content: center;
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: #F4F4F5;
 }
+
+/* Stars */
 
 @keyframes twinkle {
 
@@ -33,7 +35,6 @@
   }
 }
 
-/* Ensure the stars appear in the home-section only */
 .star {
   position: absolute;
   width: 2px;
@@ -45,7 +46,7 @@
   animation: twinkle 2s infinite alternate ease-in-out;
 }
 
-h1 {
+.home-container>h1 {
   font-size: 3rem;
 }
 
@@ -54,7 +55,7 @@ h1 {
   color: blueviolet;
 }
 
-h2 {
+.home-container>h2 {
   font-size: 2rem;
   font-weight: 100;
 }
@@ -69,7 +70,6 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: red; */
 }
 
 .nav-child {
@@ -83,14 +83,39 @@ h2 {
 
 .nav-elements {
   font-family: "Raleway", sans-serif;
-  color: white;
+  color: #F4F4F5;
   text-decoration: none;
-  padding: 10px;
+  padding: 3px 10px;
   border-radius: 20px;
   margin: 10px;
 }
 
 .nav-elements:hover {
   background-color: rgba(114, 114, 114, .2);
-  transition: ease 1s;
+  transition: ease 0.5s;
+  transform: scale(0.9);
+}
+
+.about {
+  background-color: #121212;
+  color: #F4F4F5;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.about-header {
+  width: fit-content;
+}
+
+.about-text {
+  border-left: 2px solid rgb(100, 100, 100);
+  padding-left: 20px;
+  padding-right: 22px;
+}
+
+.about-icons {
+  width: 10rem;
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
 }
