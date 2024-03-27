@@ -6,8 +6,8 @@ const Home = () => {
         let stars = [];
         for (let i = 0; i < numberOfStars; i++) {
             let starStyle = {
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
+                left: `${Math.random() * 99}%`,
+                top: `${Math.random() * 99}%`,
                 animationDelay: `${Math.random() * 2}s`,
                 animationDuration: `${Math.random() * 2 + 1}s`
             };
@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div>
             <div className='home-container'>
-                {createStars(200)}
+                {createStars(50)}
                 <h1>Welcome, I'm <span id='name'>Miran</span></h1>
                 <h2>A Full Stack Developer</h2>
             </div>
