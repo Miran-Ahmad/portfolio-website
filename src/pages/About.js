@@ -21,14 +21,13 @@ const About = () => {
               <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/miran-ahmad-611673208/')} cursor="pointer" />
               <InstagramIcon onClick={() => window.open('https://www.instagram.com/mdmiranahmad/')} cursor="pointer" />
             </div>
-            <a href="https://drive.google.com/file/d/1dGFbvMhYV2v6_x5Cd73mTxhjG9M9_LP9/view?usp=sharing" target='blank'>
-              <Button variant="outlined"
-                style={{
-                  marginTop: '20px',
-                  color: '#F4F4F5',
-                  border: 'none',
-                  backgroundColor: '#27272A',
-                }} >Download CV<ArrowDownwardIcon style={{ marginLeft: '5px' }} fontSize='small' /></Button></a>
+            <Button variant="outlined" href="https://drive.google.com/file/d/1dGFbvMhYV2v6_x5Cd73mTxhjG9M9_LP9/view?usp=sharing"
+              style={{
+                marginTop: '20px',
+                color: '#F4F4F5',
+                border: 'none',
+                backgroundColor: '#27272A',
+              }} >Download CV<ArrowDownwardIcon style={{ marginLeft: '5px' }} fontSize='small' /></Button>
           </Box>
         </Box>
       </Container>

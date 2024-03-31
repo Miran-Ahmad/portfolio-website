@@ -3,42 +3,36 @@ import React from 'react'
 
 const projects = [
   {
-    title: 'Project 1',
-    description: 'Description of Project 1 fsfsekfa mwa ffeknf',
-    imageUrl: require('../assets/cardImg.png'),
+    title: 'Restaurant Landing Page',
+    description: 'A simple reataurant landing page to display restaraunt Menu and order online. Front-end project, created using React',
+    imageUrl: require('../assets/restaurantImg.png'),
+    liveLink: 'https://foodie-restaurant-homepage.netlify.app/',
+    gitLink: 'https://github.com/Miran-Ahmad/restaurant-landing-page',
   },
   {
-    title: 'Project 2',
-    description: 'Description of Project 2 frgrgsre fdefefe wfrwfewf',
-    imageUrl: require('../assets/cardImg.png'),
+    title: 'Personal Portfolio',
+    description: 'My online portfolio giving introduction about myself along with my relevent skills. Also portraying my Projects.',
+    imageUrl: require('../assets/portfolioImg.png'),
+    liveLink: '/',
+    gitLink: 'https://github.com/Miran-Ahmad/portfolio-website',
   },
   {
-    title: 'Project 3',
-    description: 'Description of Project 3 ssssssssss ssssssssss',
-    imageUrl: require('../assets/cardImg.png'),
-  },
-  {
-    title: 'Project 3',
-    description: 'Description of Project 3 ssssssssss ssssssssss',
-    imageUrl: require('../assets/cardImg.png'),
-  },
-  {
-    title: 'Project 3',
-    description: 'Description of Project 3 ssssssssss ssssssssss',
-    imageUrl: require('../assets/cardImg.png'),
+    title: 'E-commerce  Website',
+    description: 'A Full-Stack app for an online shopping firm. Created using the MongoDB, ExpressJS, ReactJS and NodeJS.',
+    imageUrl: require('../assets/ecommerceImg.png'),
+    liveLink: '/',
+    gitLink: 'https://github.com/Miran-Ahmad/Client_side',
   },
 ];
 
-
-const ProjectCard = ({ title, description, imageUrl }) => {
+const ProjectCard = ({ title, description, imageUrl, gitLink, liveLink }) => {
   return (
-    <Card sx={{ maxWidth: 345 }} style={{ marginTop: '10%' }} >
+    <Card sx={{ maxWidth: 345 }} style={{ marginTop: '10%', border: '1px solid white', borderRadius: '3%' }} >
       <CardMedia
         component="img"
         alt="green iguana"
         height="140"
         image={imageUrl}
-      // image={require('../assets/cardImg.png')}
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -49,13 +43,12 @@ const ProjectCard = ({ title, description, imageUrl }) => {
         </Typography>
       </CardContent>
       <CardActions>
-        <Button size="small">Live</Button>
-        <Button size="small">Github</Button>
+        <Button size="small" href={liveLink} style={{ color: '#27272A' }} >Live</Button>
+        <Button size="small" href={gitLink} style={{ color: '#27272A' }} >Github</Button>
       </CardActions>
     </Card>
   );
 };
-
 
 const Projects = () => {
   return (
@@ -66,7 +59,7 @@ const Projects = () => {
           <Box className='card-container'>
             {projects.map((project, index) => (
               <Grid item key={index} xs={12} sm={6} md={4} lg={4} xl={3}>
-                <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} />
+                <ProjectCard title={project.title} description={project.description} imageUrl={project.imageUrl} liveLink={project.liveLink} gitLink={project.gitLink} />
               </Grid>
             ))}
           </Box>
