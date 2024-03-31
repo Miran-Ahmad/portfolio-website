@@ -96,9 +96,10 @@
   transform: scale(0.9);
 }
 
-.about {
+.about,
+.projects {
   /* background-color: #121212; */
-  background-color: #0d1117;;
+  background-color: #0d1117;
   color: #F4F4F5;
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -119,4 +120,10 @@
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
