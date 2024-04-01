@@ -27,24 +27,24 @@ const projects = [
 
 const ProjectCard = ({ title, description, imageUrl, gitLink, liveLink }) => {
   return (
-    <Card sx={{ maxWidth: 345 }} style={{ marginTop: '10%', border: '1px solid white', borderRadius: '3%' }} >
+    <Card sx={{ maxWidth: 345 }} style={{ marginTop: '10%', border: '0.5px solid white', borderRadius: '3%' }} >
       <CardMedia
         component="img"
         alt="green iguana"
         height="140"
         image={imageUrl}
       />
-      <CardContent>
+      <CardContent style={{ backgroundColor: '#0d1117', color: '#F4F4F5' }}>
         <Typography gutterBottom variant="h5" component="div">
           {title}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography variant="body2" color="#F4F4F5">
           {description}
         </Typography>
       </CardContent>
-      <CardActions>
-        <Button size="small" href={liveLink} style={{ color: '#27272A' }} >Live</Button>
-        <Button size="small" href={gitLink} style={{ color: '#27272A' }} >Github</Button>
+      <CardActions style={{ backgroundColor: '#0d1117' }}>
+        <Button size="small" href={liveLink} style={{ color: '#F4F4F5' }} >Live</Button>
+        <Button size="small" href={gitLink} style={{ color: '#F4F4F5' }} >Github</Button>
       </CardActions>
     </Card>
   );

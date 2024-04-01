@@ -4,13 +4,15 @@ import About from './pages/About';
 import Projects from './pages/Projects';
 import Contact from './pages/Contact';
 import Navbar from './components/Navbar';
+import Skills from './pages/Skills';
 
 function App() {
   return (
     <div>
-      <Navbar/>
+      <Navbar />
       <Home />
       <About />
+      <Skills />
       <Projects />
       <Contact />
     </div>

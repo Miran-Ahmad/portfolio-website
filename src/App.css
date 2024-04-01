@@ -97,7 +97,8 @@
 }
 
 .about,
-.projects {
+.projects,
+.skills {
   /* background-color: #121212; */
   background-color: #0d1117;
   color: #F4F4F5;
@@ -120,6 +121,17 @@
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
+}
+
+.skill-icons {
+  text-align: center;
+  word-wrap: break-word;
+}
+
+i {
+  font-size: 5rem;
+  padding: 20px;
+  color: blueviolet;
 }
 
 .card-container {
