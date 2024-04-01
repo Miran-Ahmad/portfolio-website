@@ -6,8 +6,6 @@
   box-sizing: border-box;
 }
 
-/*Home */
-
 .home-container {
   position: relative;
   width: 100%;
@@ -20,8 +18,6 @@
   font-family: "Raleway", sans-serif;
   color: #F4F4F5;
 }
-
-/* Stars */
 
 @keyframes twinkle {
 
@@ -42,7 +38,6 @@
   background-color: white;
   border-radius: 50%;
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
-  /* Glowing effect */
   animation: twinkle 2s infinite alternate ease-in-out;
 }
 
@@ -59,8 +54,6 @@
   font-size: 2rem;
   font-weight: 100;
 }
-
-/* Navbar */
 
 .nav-container {
   position: fixed;
@@ -98,8 +91,8 @@
 
 .about,
 .projects,
-.skills {
-  /* background-color: #121212; */
+.skills,
+.footer {
   background-color: #0d1117;
   color: #F4F4F5;
   padding-top: 3rem;
@@ -138,4 +131,11 @@ i {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+}
+
+.footer-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 0.5px solid white;
 }
