@@ -9,26 +9,19 @@ const Skills = () => {
                     <Typography variant="h4" align='left' mb={3} className='about-header'>Tech Stack</Typography>
                     <Box>
                         <Typography className='skill-icons'>
-                            <i class="devicon-mongodb-plain"></i>
-                            <i class="devicon-express-original"></i>
-                            <i class="devicon-react-original"></i>
-                            <i class="devicon-nodejs-plain-wordmark"></i>
-                            {/* <i class="devicon-c-plain"></i> */}
-                            {/* <i class="devicon-cplusplus-plain"></i> */}
-                            {/* <i class="devicon-html5-plain"></i> */}
-                            {/* <i class="devicon-css3-plain"></i> */}
-                            <i class="devicon-javascript-plain"></i>
-                            <i class="devicon-java-plain"></i>
-                            <i class="devicon-python-plain"></i>
-                            {/* <i class="devicon-powershell-plain"></i> */}
-                            <i class="devicon-typescript-plain"></i>
-                            {/* <i class="devicon-firebase-plain"></i> */}
-                            <i class="devicon-angular-plain"></i>
-                            <i class="devicon-npm-original-wordmark"></i>
-                            <i class="devicon-tailwindcss-original"></i>
-                            {/* <i class="devicon-figma-plain"></i> */}
-                            {/* <i class="devicon-canva-original"></i> */}
-                            {/* <i class="devicon-postman-plain"></i> */}
+                            <i class="devicon-mongodb-plain colored"></i>
+                            <i class="devicon-express-original colored"></i>
+                            <i class="devicon-react-original colored"></i>
+                            <i class="devicon-nodejs-plain-wordmark colored"></i>
+                            <i class="devicon-c-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-java-plain colored"></i>
+                            <i class="devicon-python-plain colored"></i>
+                            <i class="devicon-typescript-plain colored"></i>
+                            <i class="devicon-firebase-plain colored"></i>
+                            <i class="devicon-angular-plain colored"></i>
+                            <i class="devicon-npm-original-wordmark colored"></i>
+                            <i class="devicon-tailwindcss-original colored"></i>
                         </Typography>
                     </Box>
                 </Box>
