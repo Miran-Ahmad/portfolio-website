@@ -20,7 +20,7 @@ const Home = () => {
     return (
         <div>
             <div className='home-container'>
-                {createStars(50)}
+                {createStars(200)}
                 <h1>Welcome, I'm <span id='name'>Miran</span></h1>
                 <h2>A Full Stack Developer</h2>
             </div>

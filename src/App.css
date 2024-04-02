@@ -1,5 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
+body::-webkit-scrollbar {
+  width: 4px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5500AA;
+  border-radius: 2px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,7 +60,8 @@
 
 #name {
   font-size: 4rem;
-  color: blueviolet;
+  color: #5500AA;
+  /* color: blueviolet; */
 }
 
 .home-container>h2 {
