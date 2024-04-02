@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 body::-webkit-scrollbar {
-  width: 4px;
+  width: 6px;
 }
 
 body::-webkit-scrollbar-track {
@@ -9,8 +9,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #5500AA;
-  border-radius: 2px;
+  background-color: #FFD700;
+  border-radius: 8px;
 }
 
 * {
@@ -59,8 +59,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 #name {
-  font-size: 4rem;
-  color: #5500AA;
+  font-size: 5rem;
+  /* color: #5500AA; */
+  color: #FFD700;
   /* color: blueviolet; */
 }
 

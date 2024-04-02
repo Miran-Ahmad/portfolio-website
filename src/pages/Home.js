@@ -1,4 +1,5 @@
 import React from 'react'
+import Typewriter from 'typewriter-effect';
 
 const Home = () => {
 
@@ -22,7 +23,15 @@ const Home = () => {
             <div className='home-container'>
                 {createStars(200)}
                 <h1>Welcome, I'm <span id='name'>Miran</span></h1>
-                <h2>A Full Stack Developer</h2>
+                <h2>
+                    <Typewriter
+                        options={{
+                            strings: ['Frontend Developer', 'Web Designer', 'Software Developer', 'Cyber Security', 'Programmer', '</>'],
+                            autoStart: true,
+                            loop: true,
+                        }}
+                    />
+                </h2>
             </div>
         </div>
     )

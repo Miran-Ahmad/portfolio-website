@@ -3,11 +3,11 @@ import React from 'react'
 
 const projects = [
   {
-    title: 'Restaurant Landing Page',
-    description: 'A simple reataurant landing page to display restaraunt Menu and order online. Front-end project, created using React',
-    imageUrl: require('../assets/restaurantImg.png'),
-    liveLink: 'https://foodie-restaurant-homepage.netlify.app/',
-    gitLink: 'https://github.com/Miran-Ahmad/restaurant-landing-page',
+    title: 'E-commerce  Website',
+    description: 'A Full-Stack app for an online shopping firm. Created using the MongoDB, ExpressJS, ReactJS and NodeJS.',
+    imageUrl: require('../assets/ecommerceImg.png'),
+    liveLink: '/',
+    gitLink: 'https://github.com/Miran-Ahmad/Client_side',
   },
   {
     title: 'Personal Portfolio',
@@ -17,11 +17,11 @@ const projects = [
     gitLink: 'https://github.com/Miran-Ahmad/portfolio-website',
   },
   {
-    title: 'E-commerce  Website',
-    description: 'A Full-Stack app for an online shopping firm. Created using the MongoDB, ExpressJS, ReactJS and NodeJS.',
-    imageUrl: require('../assets/ecommerceImg.png'),
-    liveLink: '/',
-    gitLink: 'https://github.com/Miran-Ahmad/Client_side',
+    title: 'Restaurant Landing Page',
+    description: 'A simple reataurant landing page to display restaraunt Menu and order online. Front-end project, created using React',
+    imageUrl: require('../assets/restaurantImg.png'),
+    liveLink: 'https://foodie-restaurant-homepage.netlify.app/',
+    gitLink: 'https://github.com/Miran-Ahmad/restaurant-landing-page',
   },
 ];
 
