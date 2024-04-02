@@ -29,6 +29,8 @@ const Home = () => {
                             strings: ['Frontend Developer', 'Web Designer', 'Software Developer', 'Cyber Security', 'Programmer', '</>'],
                             autoStart: true,
                             loop: true,
+                            delay: 50,
+                            deleteSpeed: 10,
                         }}
                     />
                 </h2>
