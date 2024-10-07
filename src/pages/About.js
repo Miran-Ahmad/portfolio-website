@@ -3,6 +3,7 @@ import React from 'react'
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 
 const About = () => {
@@ -20,12 +21,13 @@ const About = () => {
               <GitHubIcon onClick={() => window.open('https://github.com/Miran-Ahmad')} cursor="pointer" id='icon' />
               <LinkedInIcon onClick={() => window.open('https://www.linkedin.com/in/miran-ahmad-611673208/')} cursor="pointer" id='icon' />
               <InstagramIcon onClick={() => window.open('https://www.instagram.com/mdmiranahmad/')} cursor="pointer" id='icon' />
+              <MailOutlineIcon onClick={() => window.open('mailto:222miran222@gmail.com')} cursor="pointer" id='icon' />
             </div>
             <Button variant="outlined" href="https://drive.google.com/file/d/1dGFbvMhYV2v6_x5Cd73mTxhjG9M9_LP9/view?usp=sharing"
               style={{
                 marginTop: '20px',
                 color: '#F4F4F5',
-                border: 'none',
+                border: '0.5px solid rgb(100, 100, 100)',
                 backgroundColor: '#27272A',
               }} >Download CV<ArrowDownwardIcon style={{ marginLeft: '5px' }} fontSize='small' /></Button>
           </Box>

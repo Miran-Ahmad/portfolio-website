@@ -3,25 +3,25 @@ import React from 'react'
 
 const projects = [
   {
-    title: 'E-commerce  Website',
-    description: 'A Full-Stack app for an online shopping firm. Created using the MongoDB, ExpressJS, ReactJS and NodeJS.',
-    imageUrl: require('../assets/ecommerceImg.png'),
-    liveLink: '/',
-    gitLink: 'https://github.com/Miran-Ahmad/Client_side',
+    title: 'EliteEstate | Real Estate',
+    description: 'A comprehensive real estate application to streamline property listings and facilitate user interactions.',
+    imageUrl: require('../assets/realEstateImg.png'),
+    liveLink: 'https://real-estate-mern-laea.onrender.com/',
+    gitLink: 'https://github.com/Miran-Ahmad/real-estate',
   },
   {
     title: 'Personal Portfolio',
     description: 'My online portfolio giving introduction about myself along with my relevent skills. Also portraying my Projects.',
     imageUrl: require('../assets/portfolioImg.png'),
-    liveLink: '/',
+    liveLink: 'https://miranahmad.netlify.app/',
     gitLink: 'https://github.com/Miran-Ahmad/portfolio-website',
   },
   {
-    title: 'Restaurant Landing Page',
-    description: 'A simple reataurant landing page to display restaraunt Menu and order online. Front-end project, created using React',
-    imageUrl: require('../assets/restaurantImg.png'),
-    liveLink: 'https://foodie-restaurant-homepage.netlify.app/',
-    gitLink: 'https://github.com/Miran-Ahmad/restaurant-landing-page',
+    title: 'CartNet | E-commerce',
+    description: 'A Full-Stack app for an online shopping firm. Created using the MERN stack with other NPM packages.',
+    imageUrl: require('../assets/ecommerceImg.png'),
+    liveLink: 'https://cartnet.netlify.app/',
+    gitLink: 'https://github.com/Miran-Ahmad/cartNet-ecommerce',
   },
 ];
 
