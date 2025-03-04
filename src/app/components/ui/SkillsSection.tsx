@@ -32,17 +32,20 @@ export default function SkillsSection() {
       },
       { threshold: 0.1 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+  
+    const currentRef = sectionRef.current; // Store the ref's current value
+  
+    if (currentRef) {
+      observer.observe(currentRef);
     }
-
+  
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef); // Cleanup uses the stored reference
       }
     };
   }, []);
+  
 
   return (
     <section

@@ -47,12 +47,12 @@ export default function AboutSection() {
               <span className="text-gradient">exceptional</span> experiences
             </h2>
             <p className="section-subheading mb-8">
-              I'm a designer and developer, creating digital products that
+              I&apos;m a designer and developer, creating digital products that
               balance aesthetics and functionality. My approach combines
               strategic thinking with meticulous craftsmanship.
             </p>
             <p className="section-subheading">
-              When I'm not designing or coding, you can find me exploring new
+              When I&apos;m not designing or coding, you can find me exploring new
               technologies, binge watching TV shows, or enjoying a good book
               with a cup of coffee.
             </p>

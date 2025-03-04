@@ -4,6 +4,7 @@ import { useState, useRef, useEffect } from "react";
 import { ArrowRight, ExternalLink } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Link from "next/link";
+import Image from "next/image";
 
 const projects = [
   {
@@ -50,17 +51,20 @@ export default function WorkSection() {
       },
       { threshold: 0.1 }
     );
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+  
+    const currentRef = sectionRef.current; // Store the ref's current value
+  
+    if (currentRef) {
+      observer.observe(currentRef);
     }
-
+  
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);
+  
 
   return (
     <section
@@ -95,9 +99,11 @@ export default function WorkSection() {
               )}
             >
               <div className="relative aspect-[4/3]">
-                <img
+                <Image
                   src={project.image}
                   alt={project.title}
+                  width={400}
+                  height={300}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
@@ -180,9 +186,11 @@ export default function WorkSection() {
           <div className="order-2">
             <div className="relative overflow-hidden rounded-lg aspect-[4/3] bg-white/10 p-2 shadow-sm">
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent rounded-lg" />
-              <img
+              <Image
                 src={activeProject.image}
                 alt={activeProject.title}
+                width={600}
+                height={450}
                 className="w-full h-full object-cover rounded-lg aspect-[4/3]"
               />
 

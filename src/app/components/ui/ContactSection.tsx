@@ -13,11 +13,11 @@ export default function ContactSection() {
             Get in touch
           </span>
           <h2 className="section-heading mb-6">
-            Let's work <span className="text-gradient">together</span>
+            Let&apos;s work <span className="text-gradient">together</span>
           </h2>
           <p className="section-subheading mx-auto">
             Whether you have a project in mind, a question about my work, or
-            just want to say hello, I'd love to hear from you.
+            just want to say hello, I&apos;d love to hear from you.
           </p>
         </div>
 
