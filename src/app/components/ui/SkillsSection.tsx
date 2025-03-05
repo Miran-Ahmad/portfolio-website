@@ -32,20 +32,19 @@ export default function SkillsSection() {
       },
       { threshold: 0.1 }
     );
-  
+
     const currentRef = sectionRef.current; // Store the ref's current value
-  
+
     if (currentRef) {
       observer.observe(currentRef);
     }
-  
+
     return () => {
       if (currentRef) {
         observer.unobserve(currentRef); // Cleanup uses the stored reference
       }
     };
   }, []);
-  
 
   return (
     <section
@@ -55,10 +54,10 @@ export default function SkillsSection() {
     >
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-20">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-purple-300 text-primary/80 rounded-full mb-6">
+          <span className="inline-block px-3 py-1 text-sm font-medium  bg-gradient-to-r from-amber-600 to-purple-600  text-primary rounded-full mb-6">
             Expertise
           </span>
-          <h2 className="section-heading mb-6">
+          <h2 className="text-4xl font-medium mb-6">
             My <span className="text-gradient">skills</span> & tools
           </h2>
           <p className="section-subheading mx-auto">
@@ -113,7 +112,7 @@ function SkillCategory({
       )}
       style={{ transitionDelay: `${animationDelay}ms` }}
     >
-      <div className="border border-purple-200 shadow-purple-300 rounded-lg p-8 bg-[#03040B] hover:shadow-md transition-all h-full">
+      <div className=" shadow-sm shadow-purple-300 rounded-lg p-8 bg-[#03040B] hover:shadow-md transition-all h-full">
         <h3 className="text-2xl font-serif font-medium mb-8 pb-4 border-b">
           {title}
         </h3>

@@ -9,11 +9,11 @@ export default function ContactSection() {
     >
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-purple-300 text-primary/80 rounded-full mb-6">
+          <span className="inline-block px-3 py-1 text-sm font-medium bg-gradient-to-r from-amber-600 to-purple-600 text-primary rounded-full mb-6">
             Get in touch
           </span>
-          <h2 className="section-heading mb-6">
-            Let&apos;s work <span className="text-gradient">together</span>
+          <h2 className="text-4xl font-medium mb-6">
+            Let&apos;s work together
           </h2>
           <p className="section-subheading mx-auto">
             Whether you have a project in mind, a question about my work, or
@@ -42,25 +42,6 @@ export default function ContactSection() {
                 </div>
               </div>
             </div>
-
-            <div className="bg-[#03040B] p-8 rounded-lg shadow-sm hover:shadow-md shadow-purple-400 transition-all">
-              <div className="flex">
-                <div className="w-12 h-12 rounded-md bg-primary flex items-center justify-center mr-5 flex-shrink-0">
-                  <Phone className="text-[#FAF9F6]" size={20} />
-                </div>
-                <div>
-                  <h3 className="text-lg font-medium mb-1">Phone</h3>
-                  <p className="text-muted-foreground mb-3">Available</p>
-                  <a
-                    href="tel:+1234567890"
-                    className="text-[#FAF9F6] hover:underline font-medium"
-                  >
-                    +91 91422 56038
-                  </a>
-                </div>
-              </div>
-            </div>
-
             <div className="bg-[#03040B] p-8 rounded-lg shadow-sm hover:shadow-md shadow-purple-400 transition-all">
               <div className="flex">
                 <div className="w-12 h-12 rounded-md bg-primary flex items-center justify-center mr-5 flex-shrink-0">
@@ -78,14 +59,19 @@ export default function ContactSection() {
               </div>
             </div>
           </div>
-          <Link
-            href="https://miranahmad.vercel.app/"
-            target="_blank"
-            className="flex items-center text-white mt-10 py-2 px-6 rounded-full border-b border-purple-400 shadow-sm cursor-pointer hover:shadow-mdtransition duration-300 ease-in-out"
-          >
-            Subscribe to my Newsletter
-            <ArrowUpRight />
-          </Link>
+          <div>
+            <Link
+              href="https://miranahmad.vercel.app/"
+              target="_blank"
+              className="flex items-center text-white mt-10 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
+            >
+              Subscribe to my Newsletter
+              <ArrowUpRight />
+            </Link>
+            <h6 className="text-center text-secondary/30 mt-3">
+              For Updates regarding my Work.
+            </h6>
+          </div>
         </div>
       </div>
     </section>

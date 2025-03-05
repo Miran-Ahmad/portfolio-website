@@ -51,20 +51,19 @@ export default function WorkSection() {
       },
       { threshold: 0.1 }
     );
-  
+
     const currentRef = sectionRef.current; // Store the ref's current value
-  
+
     if (currentRef) {
       observer.observe(currentRef);
     }
-  
+
     return () => {
       if (currentRef) {
         observer.unobserve(currentRef);
       }
     };
   }, []);
-  
 
   return (
     <section
@@ -74,12 +73,10 @@ export default function WorkSection() {
     >
       <div className="container-custom">
         <div className="max-w-3xl mx-auto text-center mb-16">
-          <span className="inline-block px-3 py-1 text-xs font-medium bg-purple-300 dark:bg-secondary text-primary/80 rounded-full mb-6">
+          <span className="inline-block px-3 py-1 text-sm font-medium bg-gradient-to-r from-amber-600 to-purple-600 text-primary rounded-full mb-6">
             My work
           </span>
-          <h2 className="section-heading mb-6">
-            Selected <span className="text-gradient">projects</span>
-          </h2>
+          <h2 className="text-4xl font-medium mb-6">Recent projects</h2>
           <p className="section-subheading mx-auto">
             A collection of my recent work across various industries and
             technologies. Each project represents a unique challenge and
@@ -170,13 +167,15 @@ export default function WorkSection() {
                     <p className="text-muted-foreground text-sm mb-4">
                       {project.description}
                     </p>
-                    <div className="flex items-center text-sm font-medium text-[#FAF9F6]">
-                      <span>View project</span>
-                      <ArrowRight
-                        size={14}
-                        className="ml-1 transition-transform group-hover:translate-x-1"
-                      />
-                    </div>
+                    <Link href={project.link}>
+                      <div className="flex items-center text-sm font-medium text-[#FAF9F6]">
+                        <span>View project</span>
+                        <ArrowRight
+                          size={14}
+                          className="ml-1 transition-transform group-hover:translate-x-1"
+                        />
+                      </div>
+                    </Link>
                   </div>
                 </div>
               ))}

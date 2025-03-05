@@ -15,17 +15,17 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Md Miran Ahmad | Web Developer & MERN Stack Expert",
-  description: "Explore my portfolio featuring web development projects, including real estate and e-commerce applications.",
+  title: "Md Miran Ahmad | Web & MERN StacK, Software Developer",
+  description: "Explore my portfolio featuring everything about me, my projects and my Contact information.",
   keywords: ["web developer", "MERN stack", "Next.js", "portfolio", "React"],
   openGraph: {
-    title: "Md Miran Ahmad | Web Developer & MERN Stack Expert",
-    description: "Explore my portfolio featuring web development projects, including real estate and e-commerce applications.",
-    url: "https://yourportfolio.com",
+    title: "Md Miran Ahmad | Web & MERN Stack, Software Developer",
+    description: "Explore my portfolio featuring everything about me, my projects and my Contact information.",
+    url: "mdmiranahmad.vercel.app",
     siteName: "Md Miran Ahmad Portfolio",
     images: [
       {
-        url: "https://yourportfolio.com/preview.jpg",
+        url: "https://mdmiranahmad.vercel.app/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Md Miran Ahmad Portfolio Preview",
@@ -35,11 +35,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Md Miran Ahmad | Web Developer & MERN Stack Expert",
-    description: "Explore my portfolio featuring web development projects, including real estate and e-commerce applications.",
-    images: ["https://yourportfolio.com/preview.jpg"],
+    title: "Md Miran Ahmad | Web & MERN Stack, Software Developer",
+    description: "Explore my portfolio featuring everything about me, my projects and my Contact information.",
+    images: ["https://mdmiranahmad.vercel.app/preview.jpg"],
   },
-  viewport: "width=device-width, initial-scale=1.0",
 };
 
 export default function RootLayout({

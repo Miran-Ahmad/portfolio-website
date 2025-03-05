@@ -39,7 +39,7 @@ export default function AboutSection() {
       <div className="container-custom">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <span className="inline-block px-3 py-1 text-xs font-medium bg-purple-300 text-primary/80 rounded-full mb-6">
+            <span className="inline-block px-3 py-1 font-medium text-sm bg-gradient-to-r from-amber-600 to-purple-600 text-primary rounded-full mb-6">
               About me
             </span>
             <h2 className="section-heading mb-6">
@@ -52,12 +52,11 @@ export default function AboutSection() {
               strategic thinking with meticulous craftsmanship.
             </p>
             <p className="section-subheading">
-              When I&apos;m not designing or coding, you can find me exploring new
-              technologies, binge watching TV shows, or enjoying a good book
+              When I&apos;m not designing or coding, you can find me exploring
+              new technologies, binge watching TV shows, or enjoying a good book
               with a cup of coffee.
             </p>
           </div>
-
           <div className="space-y-4">
             <FeatureCard
               icon={<Monitor className="text-[#FAF9F6]" />}
