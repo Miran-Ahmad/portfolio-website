@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <div
       id="home"
-      className="bg-[#03040B] flex flex-col items-center justify-center pt-40 lg:pt-20 pb-40 lg:pb-10"
+      className="bg-[#03040B] flex flex-col items-center justify-center pt-44 lg:pt-36 pb-40 lg:pb-10"
     >
       <div className="space-y-1">
         <h2 className="z-10 text-3xl font-bold text-center text-transparent duration-1000 bg-white cursor-default text-stroke animate-title sm:text-5xl md:text-6xl whitespace-nowrap bg-clip-text pb-10">

@@ -39,8 +39,8 @@ export default function Navbar() {
   return (
     <header
       className={cn(
-        `"fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out",
-        isVisible || mobileMenuOpen ? "translate-y-0" : "-translate-y-[120%]"`
+        "fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out",
+        isVisible || mobileMenuOpen ? "translate-y-0" : "-translate-y-[120%]"
       )}
     >
       <div className="container-custom flex items-center justify-between lg:justify-center px-6">
