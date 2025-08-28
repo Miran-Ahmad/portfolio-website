@@ -5,6 +5,7 @@ import { ArrowDown } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {
+  
   return (
     <div
       id="home"
@@ -12,10 +13,10 @@ const HeroSection = () => {
     >
       <div className="space-y-1">
         <h2 className="z-10 text-3xl font-bold text-center text-transparent duration-1000 bg-white cursor-default text-stroke animate-title sm:text-5xl md:text-6xl whitespace-nowrap bg-clip-text pb-10">
-          Welcome to my Portfolio
+          Hey, I'm
         </h2>
         <h1 className="z-10 text-4xl font-bold text-center text-transparent duration-1000 bg-white cursor-default sm:text-6xl md:text-7xl whitespace-nowrap bg-clip-text bg-gradient-to-r from-purple-300 to-purple-800 animate-fade-in-3">
-          Miran Ahmad
+          Miran
         </h1>
       </div>
       <Socials />
@@ -42,7 +43,7 @@ const HeroSection = () => {
         target="_blank"
         className="flex items-center text-white mt-10 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
       >
-        Download CV
+        Curriculum Vitae
         <ArrowDown />
       </Link>
     </div>

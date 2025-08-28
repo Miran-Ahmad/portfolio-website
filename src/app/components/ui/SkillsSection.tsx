@@ -9,16 +9,16 @@ const skills = {
     "User Interface (UI) Design",
     "Canva",
     "Figma",
+    "Adobe Photoshop, Premiere",
   ],
   development: [
     "React.js & Next.js",
     "TypeScript & JavaScript",
-    "HTML & CSS",
-    "Node.js",
+    "Backend development with Node.js",
     "Tailwind CSS",
-    "Responsive Design",
+    "DevOps",
   ],
-  tools: ["VS Code", "Git & GitHub", "Vercel", "Netlify"],
+  tools: ["VS Code", "Git & GitHub", "Vercel", "Amazon Web Services (AWS)", "Docker"],
 };
 
 export default function SkillsSection() {

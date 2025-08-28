@@ -16,12 +16,12 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Md Miran Ahmad | Web & MERN StacK, Software Developer",
+  title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
   description:
     "Explore my portfolio featuring everything about me, my projects and my Contact information.",
-  keywords: ["web developer", "MERN stack", "Next.js", "portfolio", "React"],
+  keywords: ["web developer", "MERN stack", "Next.js", "portfolio", "React", "DevOps"],
   openGraph: {
-    title: "Md Miran Ahmad | Web & MERN Stack, Software Developer",
+    title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
     description:
       "Explore my portfolio featuring everything about me, my projects and my Contact information.",
     url: "mdmiranahmad.vercel.app",
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Md Miran Ahmad | Web & MERN Stack, Software Developer",
+    title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
     description:
       "Explore my portfolio featuring everything about me, my projects and my Contact information.",
     images: ["https://mdmiranahmad.vercel.app/preview.jpg"],

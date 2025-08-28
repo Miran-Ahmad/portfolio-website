@@ -15,7 +15,7 @@ export default function Footer() {
               Miran Ahmad
             </a>
             <p className="text-muted-foreground mt-2 text-sm">
-              Creating thoughtful digital experiences
+              Crafting thoughtful digital experiences
             </p>
           </div>
 

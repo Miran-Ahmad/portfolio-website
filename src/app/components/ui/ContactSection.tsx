@@ -31,7 +31,7 @@ export default function ContactSection() {
                 <div>
                   <h3 className="text-lg font-medium mb-1">Email</h3>
                   <p className="text-muted-foreground mb-3">
-                    For project inquiries and collaborations
+                    For work inquiries and collaborations
                   </p>
                   <a
                     href="mailto:222miran222@gmail.com"
@@ -60,17 +60,17 @@ export default function ContactSection() {
             </div>
           </div>
           <div>
+            <h6 className="text-center text-secondary/30 mt-3">
+              For Updates regarding my Work
+            </h6>
             <Link
               href="https://miranahmad.vercel.app/"
               target="_blank"
-              className="flex items-center text-white mt-10 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
+              className="flex items-center text-white mt-2 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
             >
               Subscribe to my Newsletter
               <ArrowUpRight />
             </Link>
-            <h6 className="text-center text-secondary/30 mt-3">
-              For Updates regarding my Work.
-            </h6>
           </div>
         </div>
       </div>
