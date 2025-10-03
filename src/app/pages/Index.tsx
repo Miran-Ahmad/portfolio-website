@@ -1,11 +1,11 @@
 import React from "react";
-import HeroSection from "../components/ui/HeroSection";
-import Navbar from "../components/ui/Navbar";
-import AboutSection from "../components/ui/AboutSection";
-import WorkSection from "../components/ui/WorkSection";
-import SkillsSection from "../components/ui/SkillsSection";
-import ContactSection from "../components/ui/ContactSection";
-import Footer from "../components/ui/Footer";
+import Navbar from "../components/Navbar";
+import HeroSection from "../components/HeroSection";
+import AboutSection from "../components/AboutSection";
+import WorkSection from "../components/WorkSection";
+import SkillsSection from "../components/SkillsSection";
+import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 const Index = () => {
   return (

@@ -1,4 +1,4 @@
-import { SparklesCore } from "@/components/ui/sparkles";
+import { SparklesCore } from "../components/ui/sparkles";
 import React from "react";
 import Socials from "./Socials";
 import { ArrowDown } from "lucide-react";
