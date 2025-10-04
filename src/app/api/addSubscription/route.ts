@@ -1,4 +1,3 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
 import mailchimp from "@mailchimp/mailchimp_marketing";
 
 mailchimp.setConfig({
