@@ -18,7 +18,7 @@ const socials = [
 
 const Socials = () => {
   return (
-    <div className="flex items-center justify-center sm:gap-x-4 mt-10 md:w-[400px]">
+    <div className="flex items-center justify-center sm:gap-x-4 mt-14 md:w-[400px]">
       {socials.map((social) => (
         <div
           key={social.id}
