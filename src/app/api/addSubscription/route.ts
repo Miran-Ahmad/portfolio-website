@@ -1,6 +1,5 @@
-// route.ts
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const mailchimp = require("@mailchimp/mailchimp_marketing");
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+import mailchimp from "@mailchimp/mailchimp_marketing";
 
 mailchimp.setConfig({
   apiKey: process.env.MAILCHIMP_API_KEY,
