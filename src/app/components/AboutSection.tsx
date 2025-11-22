@@ -59,22 +59,22 @@ export default function AboutSection() {
           </div>
           <div className="space-y-4">
             <FeatureCard
+              icon={<Code className="text-[#FAF9F6]" />}
+              title="Development"
+              description="Building responsive, performant web applications using modern technologies and best practices."
+              className="translate-y-0 sm:-translate-y-4"
+            />
+            <FeatureCard
+              icon={<Paintbrush className=" text-[#FAF9F6]" />}
+              title="DevOps"
+              description="Building efficient pipelines and automated systems that enhance reliability and accelerate delivery."
+              className="sm:ml-8"
+            />
+            <FeatureCard
               icon={<Monitor className="text-[#FAF9F6]" />}
               title="Algorithm's"
               description="Deep diving into the world od Data Structures, algorithm & Coding to solve real world problems."
               className="translate-y-0 sm:translate-y-4"
-            />
-            <FeatureCard
-              icon={<Code className="text-[#FAF9F6]" />}
-              title="Development"
-              description="Building responsive, performant web applications using modern technologies and best practices."
-              className="sm:ml-8"
-            />
-            <FeatureCard
-              icon={<Paintbrush className=" text-[#FAF9F6]" />}
-              title="UI/UX Design"
-              description="Crafting beautiful visuals that communicate effectively and elevate the user experience."
-              className="translate-y-0 sm:-translate-y-4"
             />
           </div>
         </div>
