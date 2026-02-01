@@ -1,15 +1,23 @@
+"use client";
+
 import { Spotlight } from "./ui/Spotlight";
 import { SparklesCore } from "./ui/sparkles";
-import React from "react";
+import React, { useEffect } from "react";
 import Socials from "./Socials";
-import { ArrowDown } from "lucide-react";
+import { ArrowDownToLine } from "lucide-react";
 import Link from "next/link";
 
 const HeroSection = () => {
+  useEffect(() => {
+    if ("scrollRestoration" in window.history) {
+      window.history.scrollRestoration = "manual";
+    }
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div
       id="home"
-      className="bg-[#03040B] flex flex-col items-center justify-center pt-44 lg:pt-36 pb-40 lg:pb-10 min-h-screen"
+      className="bg-[#03040B] flex flex-col items-center justify-center pt-28 sm:pt-36 lg:pt-36 pb-40 lg:pb-10 min-h-screen mx-auto px-4 relative overflow-hidden"
     >
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
@@ -45,10 +53,10 @@ const HeroSection = () => {
       <Link
         href="https://drive.google.com/file/d/1x4vZ8QpFqeGjyDIt8LgUj4Lc_f_9R43b/view?usp=drive_link"
         target="_blank"
-        className="flex items-center text-white mt-10 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
+        className="flex items-center text-white mt-10 scroll-mt-0 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
       >
-        Curriculum Vitae
-        <ArrowDown />
+        Curriculum Vitae 
+        <ArrowDownToLine />
       </Link>
     </div>
   );

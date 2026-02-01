@@ -40,7 +40,7 @@ export default function Navbar() {
     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50 transition-transform duration-300 ease-in-out",
-        isVisible || mobileMenuOpen ? "translate-y-0" : "-translate-y-[120%]"
+        isVisible || mobileMenuOpen ? "translate-y-0" : "-translate-y-[120%]",
       )}
     >
       <div className="container-custom flex items-center justify-between lg:justify-center px-6">
@@ -75,8 +75,8 @@ export default function Navbar() {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "fixed inset-0 z-40 text-secondary bg-black transition-all duration-300 ease-in-out h-screen mt-16 py-6 px-6",
-          mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          "fixed inset-0 z-40 text-secondary bg-[#03040B] transition-all duration-300 ease-in-out border rounded-xl h-65 w-60 ml-5 mt-16 py-6 px-6",
+          mobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible",
         )}
       >
         <nav>

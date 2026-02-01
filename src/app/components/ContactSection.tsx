@@ -65,7 +65,7 @@ export default function ContactSection() {
             </h6>
             <Link
               href="/subscribe"
-              className="flex items-center text-white mt-2 py-4 px-12 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
+              className="flex items-center text-white mt-2 py-2 px-6 rounded-full border border-purple-400 shadow-md cursor-default hover:shadow-lg shadow-amber-600 transition duration-300 ease-in-out"
             >
               Subscribe to my Newsletter
             </Link>
