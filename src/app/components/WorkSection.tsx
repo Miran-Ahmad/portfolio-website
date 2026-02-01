@@ -9,23 +9,23 @@ import Image from "next/image";
 const projects = [
   {
     id: 1,
-    title: "Newsletter Subscription App",
-    category: "Front End Development",
+    title: "Podcast Clipper",
+    category: "Full Stack Development",
     description:
-      "A minimalist dark-themed newsletter subscription app that allows users to subscribe to my newsletter and receive updates on new articles and blog posts from me.",
+      "An AI-powered tool that automatically extracts highlight-worthy clips from long podcast videos, making content creation faster and easier for creators.",
     image:
-      "https://res.cloudinary.com/dx3vqbb9r/image/upload/v1741050329/180shots_so_rdtbnq.jpg",
-    link: "https://miranahmad.in",
+      "https://res.cloudinary.com/dx3vqbb9r/image/upload/v1769975809/Screenshot_2026-01-16_130757_uvdeau.png",
+    link: "https://ai-podcast-clipper-psi.vercel.app/",
   },
   {
     id: 2,
-    title: "Elite Estate - Real Estate App",
+    title: "Pixora Photo Editor",
     category: "Full Stack Development",
     description:
-      "A comprehensive real estate application to streamline property listings and facilitate user interactions. The app is built using the MERN stack.",
+      "An AI-driven photo editing tool that allows users to enhance, retouch, and transform images with features like background removal, filters, and automatic enhancements.",
     image:
-      "https://res.cloudinary.com/dx3vqbb9r/image/upload/v1741094013/344801663-d23ab444-8830-47aa-8270-02af361aaf37_lq2qu4.png",
-    link: "https://github.com/Miran-Ahmad/real-estate",
+      "https://res.cloudinary.com/dx3vqbb9r/image/upload/v1769976306/Screenshot_36_ddfi3v.png",
+    link: "https://pixoraaieditor.vercel.app/",
   },
   {
     id: 3,
@@ -49,7 +49,7 @@ export default function WorkSection() {
       ([entry]) => {
         setIsInView(entry.isIntersecting);
       },
-      { threshold: 0.1 }
+      { threshold: 0.1 },
     );
 
     const currentRef = sectionRef.current; // Store the ref's current value
@@ -92,7 +92,7 @@ export default function WorkSection() {
               className={cn(
                 "bg-[#03040B] border-2 dark:bg-secondary/5 rounded-lg overflow-hidden shadow-sm",
                 isInView &&
-                  `animate-fade-up opacity-100 delay-[${index * 200}ms]`
+                  `animate-fade-up opacity-100 delay-[${index * 200}ms]`,
               )}
             >
               <div className="relative aspect-[4/3]">
@@ -147,7 +147,7 @@ export default function WorkSection() {
                     "cursor-pointer group transition-all border-l-2 pl-6 py-2 hover:border-purple-300",
                     activeProject.id === project.id
                       ? "border-purple-400"
-                      : "border-black"
+                      : "border-black",
                   )}
                   onClick={() => setActiveProject(project)}
                 >
@@ -155,7 +155,7 @@ export default function WorkSection() {
                     className={cn(
                       "transition-opacity duration-500 opacity-0 transform translate-y-4",
                       isInView &&
-                        `animate-fade-up opacity-100 delay-[${index * 200}ms]`
+                        `animate-fade-up opacity-100 delay-[${index * 200}ms]`,
                     )}
                   >
                     <span className="text-sm font-medium text-muted-foreground mb-2 block">
