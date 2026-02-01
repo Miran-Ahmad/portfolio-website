@@ -15,7 +15,7 @@ const projects = [
       "A minimalist dark-themed newsletter subscription app that allows users to subscribe to my newsletter and receive updates on new articles and blog posts from me.",
     image:
       "https://res.cloudinary.com/dx3vqbb9r/image/upload/v1741050329/180shots_so_rdtbnq.jpg",
-    link: "https://miranahmad.vercel.app/",
+    link: "https://miranahmad.in",
   },
   {
     id: 2,

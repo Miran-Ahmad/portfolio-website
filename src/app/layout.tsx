@@ -19,16 +19,23 @@ export const metadata: Metadata = {
   title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
   description:
     "Explore my portfolio featuring everything about me, my projects and my Contact information.",
-  keywords: ["web developer", "MERN stack", "Next.js", "portfolio", "React", "DevOps"],
+  keywords: [
+    "web developer",
+    "MERN stack",
+    "Next.js",
+    "portfolio",
+    "React",
+    "DevOps",
+  ],
   openGraph: {
     title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
     description:
       "Explore my portfolio featuring everything about me, my projects and my Contact information.",
-    url: "mdmiranahmad.vercel.app",
+    url: "miranahmad.in",
     siteName: "Md Miran Ahmad Portfolio",
     images: [
       {
-        url: "https://mdmiranahmad.vercel.app/preview.jpg",
+        url: "https://miranahmad.in/preview.jpg",
         width: 1200,
         height: 630,
         alt: "Md Miran Ahmad Portfolio Preview",
@@ -41,7 +48,7 @@ export const metadata: Metadata = {
     title: "Md Miran Ahmad | Web & MERN StacK Developer | DevOps Engineer",
     description:
       "Explore my portfolio featuring everything about me, my projects and my Contact information.",
-    images: ["https://mdmiranahmad.vercel.app/preview.jpg"],
+    images: ["https://miranahmad.in/preview.jpg"],
   },
 };
 
@@ -52,6 +59,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* ✅ Person Schema for Google */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              name: "Md Miran Ahmad",
+              alternateName: "Miran Ahmad",
+              url: "https://www.miranahmad.in",
+              sameAs: [
+                "https://github.com/Miran-Ahmad",
+                "https://www.linkedin.com/in/mdmiranahmad",
+              ],
+              jobTitle: "Web Developer",
+              knowsAbout: ["React", "Next.js", "MERN Stack", "DevOps"],
+            }),
+          }}
+        />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
