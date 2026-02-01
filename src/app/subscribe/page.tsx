@@ -4,7 +4,7 @@ import { Spotlight } from "../components/ui/Spotlight";
 
 export default function Home() {
   return (
-    <main className="bg-[#03040B] flex flex-col items-center justify-center p-10 min-h-screen">
+    <main className="bg-[#03040B] flex flex-col items-center justify-center p-10 min-h-screen  mx-auto px-4 relative overflow-hidden">
       <Spotlight
         className="-top-40 left-0 md:left-60 md:-top-20"
         fill="white"
